@@ -1,0 +1,21 @@
+<?php 
+class ToolsController extends Controller{
+    public function __construct($controller, $method){
+        parent::__construct($controller, $method);
+        $this->view->setLayout('default');
+    }
+
+    public function indexAction(){
+        $this->view->render('tools/index');
+    }
+
+    public function firstAction(){
+        $this->view->render('tools/first');
+    }
+    public function secondAction(){
+        $this->view->render('tools/second');
+    }
+    public function thirdAction(){
+        $this->view->render('tools/third');
+    }
+}
